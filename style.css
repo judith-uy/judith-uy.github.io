@@ -83,3 +83,13 @@ footer a {
   margin-left: 10px;
   font-weight: bold;
 }
+
+/* Estilo específico para el nombre "Kimberli Britos" */
+header h1 {
+  font-size: 2em;                  /* Un poco más chico que antes */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Igual que el resto */
+  font-weight: 300;                /* Mismo peso fino que los h2 */
+  color: white;                    /* Blanco */
+  margin: 0;                       /* Sin margen adicional */
+  letter-spacing: 0.5px;           /* Opcional: un poco de espacio para estilizar */
+}
