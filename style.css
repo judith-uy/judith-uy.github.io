@@ -1,39 +1,35 @@
 /* Hace que el body ocupe toda la pantalla y evita el scroll */
 html, body {
-  min-height: 100vh; /* Permite que crezca con el contenido */
+  height: 100vh;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Oculta solo scroll horizontal */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
-  background-color: #121212; /* Fondo negro */
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
   color: #f0f0f0;
+  box-sizing: border-box;
 }
 
 /* Encabezado centrado */
 header {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
-  height: 15vh;             /* Más bajo para reducir espacio */
+  justify-content: center;
+  align-items: center;
+  height: 15vh; /* REDUCIDO de 20vh */
   background-color: #121212;
   color: white;
+  font-size: 2.2em; /* Ligeramente reducido */
+  font-weight: 300;
   text-align: center;
 }
 
-header h1 {
-  font-size: 2em; /* Más chico que antes */
-  font-weight: 300; /* Igual a los h2 */
-  color: white;
-  margin: 0;
-}
-
-/* Contenedor principal con dos columnas */
+/* Contenedor principal */
 main {
   display: flex;
   flex: 1;
-  min-height: 70vh; /* Más alto para evitar cortes */
-  padding: 20px;
-  gap: 20px;
+  height: 60vh; /* Se mantiene pero con menos padding y gap */
+  padding: 10px; /* REDUCIDO de 20px */
+  gap: 10px;     /* REDUCIDO de 20px */
   box-sizing: border-box;
 }
 
@@ -41,45 +37,44 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  overflow: visible; /* Permite que crezca según contenido */
+  gap: 10px;
+  overflow: hidden;
 }
 
 /* Secciones internas */
 section {
   background-color: #1e1e1e;
-  padding: 20px;
+  padding: 15px; /* REDUCIDO de 20px */
   border-radius: 10px;
   border: 1px solid #2c2c2c;
-  overflow: visible; /* Importante para que no se corte */
+  overflow: hidden;
   flex: 1;
 }
 
-/* Estilo de títulos con degradado */
+/* Títulos con degradado */
 section h2 {
-  font-size: 1.8em;
+  font-size: 1.5em; /* REDUCIDO de 1.8em */
   font-weight: 300;
   background: linear-gradient(to right, #4CAF50, #00C853);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /* Lista de habilidades */
 ul {
   padding-left: 20px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-/* Pie de página con contacto y LinkedIn */
+/* Pie de página */
 footer {
-  margin-top: 30px; /* Empuja el footer hacia abajo */
-  padding: 20px;
+  height: 15vh; /* REDUCIDO de 20vh */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 0.9em;
+  font-size: 0.85em;
   text-align: center;
 }
 
