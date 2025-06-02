@@ -1,36 +1,42 @@
+/* Hace que el body ocupe toda la altura de la pantalla y evita el scroll general */
 html, body {
-  height: 100vh; /* Ocupar toda la altura de la pantalla */
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Oculta el scroll */
-  display: flex;
-  flex-direction: column;
+  height: 100vh;            /* Usa el 100% de la altura de la ventana */
+  margin: 0;                /* Quita márgenes por defecto */
+  padding: 0;               /* Quita relleno por defecto */
+  overflow: hidden;         /* Oculta cualquier scroll general */
+  display: flex;            /* Activa diseño en columna para header, sección y footer */
+  flex-direction: column;   /* Acomoda elementos uno debajo del otro */
 }
 
 body {
-  background-color: #121212; /* fondo negro suave */
-  color: #f0f0f0; /* texto claro */
+  background-color: #121212;  /* Fondo negro suave */
+  color: #f0f0f0;             /* Texto claro */
   font-family: Arial, sans-serif;
 }
 
-/* Asegurar que los elementos no crezcan demasiado */
-header, footer {
-  flex-shrink: 0;
+/* Estilo del encabezado (nombre y descripción) */
+header {
+  background-color: #4CAF50;  /* Verde */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex-shrink: 0;             /* El header no se reduce si hay poco espacio */
 }
 
+/* Secciones generales */
 section {
-  flex: 1; /* Hace que las secciones ocupen el espacio disponible */
-  overflow: auto; /* Por si hay mucho contenido, solo la sección puede scrollear */
-  margin-top: 10px; /* Reducido para que no sume demasiada altura */
-  background-color: #1e1e1e; /* gris oscuro */
+  flex: 1;                          /* Ocupa todo el espacio disponible entre header y footer */
+  overflow-y: auto;                /* Si hay mucho contenido, solo esta parte tiene scroll */
+  margin-top: 10px;
+  background-color: #1e1e1e;       /* Gris oscuro */
   padding: 15px;
   border-radius: 10px;
   border: 1px solid #2c2c2c;
 }
 
-/* Estilos específicos de "sobre mí" */
+/* Título de "Sobre mí" */
 .sobre-mi h2 {
-  color: #4CAF50; /* verde para títulos */
+  color: #4CAF50;                  /* Verde para títulos */
   font-size: 26px;
   margin-bottom: 15px;
   border-bottom: 2px solid #4CAF50;
@@ -38,14 +44,16 @@ section {
   padding-bottom: 5px;
 }
 
+/* Párrafo de "Sobre mí" */
 .sobre-mi p {
   font-size: 18px;
   color: #ccc;
   line-height: 1.6;
 }
 
+/* Estilo del pie de página */
 footer {
-  flex-shrink: 0;
+  flex-shrink: 0;                  /* El footer tampoco se reduce */
   font-size: 0.9em;
   text-align: center;
   padding: 10px;
