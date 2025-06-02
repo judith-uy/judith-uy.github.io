@@ -15,9 +15,26 @@ header {
 
 section {
   margin-top: 20px;
-  background: white;
-  padding: 15px;
+  background-color: #1e1e1e; /* gris oscuro */
+  padding: 20px;
   border-radius: 10px;
+  border: 1px solid #2c2c2c;
+  color: #f0f0f0;
+}
+
+.sobre-mi h2 {
+  color: #4CAF50; /* verde para títulos */
+  font-size: 26px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4CAF50;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.sobre-mi p {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
 }
 
 footer {
