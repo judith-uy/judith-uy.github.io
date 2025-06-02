@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-  font-size: 2em; /* Más chico que antes */
+  font-size: 3em; /* Más chico que antes */
   font-weight: 300; /* Igual a los h2 */
   color: white;
   margin: 0;
