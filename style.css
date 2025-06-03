@@ -51,7 +51,9 @@ section {
   border-radius: 10px;
   border: 1px solid #2c2c2c;
   overflow: visible; /* Importante para que no se corte */
-  flex: 1;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
 }
 
 /* Estilo de títulos con degradado */
