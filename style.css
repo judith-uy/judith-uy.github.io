@@ -47,7 +47,7 @@ main {
 /* Secciones internas */
 section {
   background-color: #1e1e1e;
-  padding: 3px 7px 7px 7px;
+  padding: 2px 7px 7px 7px;
   border-radius: 10px;
   border: 1px solid #2c2c2c;
   overflow: visible; /* Importante para que no se corte */
