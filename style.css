@@ -73,8 +73,8 @@ ul {
 
 /* Pie de página con contacto y LinkedIn */
 footer {
-  margin-top: 20px; /* Empuja el footer hacia abajo */
-  padding: 20px;
+  margin-top: 10px; /* Empuja el footer hacia abajo */
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
