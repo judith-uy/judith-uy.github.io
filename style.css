@@ -3,7 +3,6 @@ html, body {
   min-height: 100vh; /* Permite que crezca con el contenido */
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Oculta solo scroll horizontal */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
   background-color: #121212; /* Fondo negro */
   color: #f0f0f0;
