@@ -31,7 +31,7 @@ header h1 {
 main {
   display: flex;
   flex: 1;
-  min-height: 50vh; /* Más alto para evitar cortes */
+  min-height: 60vh; /* Más alto para evitar cortes */
   padding: 20px;
   gap: 20px;
   box-sizing: border-box;
@@ -48,7 +48,7 @@ main {
 /* Secciones internas */
 section {
   background-color: #1e1e1e;
-  padding: 8px;
+  padding: 4px 8px 8px 8px;
   border-radius: 10px;
   border: 1px solid #2c2c2c;
   overflow: visible; /* Importante para que no se corte */
