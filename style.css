@@ -90,3 +90,16 @@ footer a {
   margin-left: 10px;
   font-weight: bold;
 }
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo p {
+  margin-top: 4px; /* Ajustá este valor según el espacio que quieras */
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #aaa;
+}
