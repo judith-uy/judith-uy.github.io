@@ -47,7 +47,7 @@ main {
 /* Secciones internas */
 section {
   background-color: #1e1e1e;
-  padding: 2px 7px 7px 7px;
+  padding: 3px 6px 6px 6px;
   border-radius: 10px;
   border: 1px solid #2c2c2c;
   overflow: visible; /* Importante para que no se corte */
@@ -61,7 +61,7 @@ section h2 {
   background: linear-gradient(to right, #4CAF50, #00C853);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 /* Lista de habilidades */
