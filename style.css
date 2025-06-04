@@ -1,105 +1,106 @@
-/* Hace que el body ocupe toda la pantalla y evita el scroll */
+/* Ajustes generales del documento */
 html, body {
-  min-height: 100vh; /* Permite que crezca con el contenido */
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+  min-height: 100vh; /* Hace que el body ocupe toda la pantalla, incluso sin contenido */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina relleno por defecto */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
   background-color: #121212; /* Fondo negro */
-  color: #f0f0f0;
+  color: #f0f0f0; /* Texto claro */
 }
 
 /* Encabezado centrado */
 header {
-  display: flex;
+  display: flex; /* Usa flexbox para alinear contenido */
   justify-content: center; /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
-  height: 15vh;             /* Más bajo para reducir espacio */
-  background-color: #121212;
-  color: white;
-  text-align: center;
+  align-items: center; /* Centra verticalmente */
+  height: 15vh; /* Altura del header */
+  background-color: #121212; /* Mismo fondo que el body */
+  color: white; /* Color del texto */
+  text-align: center; /* Centra texto dentro del header */
 }
 
+/* Estilo del título principal */
 header h1 {
-  font-size: 3em; /* Más chico que antes */
-  font-weight: 300; /* Igual a los h2 */
-  color: white;
-  margin: 0;
+  font-size: 3em; /* Tamaño grande */
+  font-weight: 300; /* Grosor fino */
+  margin: 0; /* Elimina espacio extra */
 }
 
 /* Contenedor principal con dos columnas */
 main {
-  display: flex;
-  flex: 1;
-  min-height: 60vh; /* Más alto para evitar cortes */
-  padding: 10px;
-  gap: 20px;
-  box-sizing: border-box;
-  max-width: 95vw;
-  margin: 0 auto;
+  display: flex; /* Distribuye contenido en columnas */
+  min-height: 60vh; /* Altura mínima para evitar cortes visuales */
+  padding: 10px; /* Espacio interno */
+  gap: 20px; /* Espacio entre columnas */
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+  max-width: 95vw; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
 }
 
+/* Columnas izquierda y derecha */
 .izquierda, .derecha {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  overflow: visible; /* Permite que crezca según contenido */
+  flex: 1; /* Ocupan el mismo espacio */
+  display: flex; /* Flexbox para apilar contenido verticalmente */
+  flex-direction: column; /* Alinea secciones una debajo de la otra */
+  gap: 20px; /* Espacio entre secciones */
 }
 
-/* Secciones internas */
+/* Estilo general para cada sección del contenido */
 section {
-  background-color: #1e1e1e;
-  padding: 2px 6px 6px 6px;
-  border-radius: 10px;
-  border: 1px solid #2c2c2c;
-  overflow: visible; /* Importante para que no se corte */
-  flex: 1;
+  background-color: #1e1e1e; /* Fondo oscuro para contraste */
+  padding: 2px 6px 6px 6px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 1px solid #2c2c2c; /* Borde sutil */
+  flex: 1; /* Permite que se expandan si es necesario */
 }
 
-/* Estilo de títulos con degradado */
+/* Títulos de las secciones con efecto degradado */
 section h2 {
-  font-size: 1.8em;
-  font-weight: 300;
-  background: linear-gradient(to right, #4CAF50, #00C853);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
+  font-size: 1.8em; /* Tamaño grande */
+  font-weight: 300; /* Grosor fino */
+  background: linear-gradient(to right, #4CAF50, #00C853); /* Degradado verde */
+  -webkit-background-clip: text; /* Clip para aplicar degradado al texto */
+  -webkit-text-fill-color: transparent; /* Hace el texto transparente para ver el degradado */
+  margin-bottom: 10px; /* Espacio debajo del título */
 }
 
 /* Lista de habilidades */
 ul {
-  padding-left: 20px;
-  line-height: 1.6;
+  padding-left: 20px; /* Sangría para bullets */
+  line-height: 1.6; /* Espaciado entre líneas */
 }
 
-/* Pie de página con contacto y LinkedIn */
+/* Pie de página con contacto */
 footer {
-  margin-top: 10px; /* Empuja el footer hacia abajo */
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 0.9em;
-  text-align: center;
+  margin-top: 10px; /* Separación del contenido principal */
+  padding: 10px; /* Espacio interno */
+  display: flex; /* Alineación del contenido */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  flex-direction: column; /* En columna */
+  font-size: 0.9em; /* Tamaño de texto menor */
+  text-align: center; /* Centra texto */
 }
 
+/* Estilo para el enlace de LinkedIn */
 footer a {
-  color: #4CAF50;
-  text-decoration: none;
-  margin-left: 10px;
-  font-weight: bold;
+  color: #4CAF50; /* Verde vibrante */
+  text-decoration: none; /* Sin subrayado */
+  margin-left: 10px; /* Espacio entre email y LinkedIn */
+  font-weight: bold; /* Texto más fuerte */
 }
 
+/* Contenedor del título y subtítulo */
 .titulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Flex para apilar */
+  flex-direction: column; /* Vertical */
+  align-items: center; /* Centra elementos */
 }
 
+/* Subtítulo debajo del nombre */
 .titulo p {
-  margin-top: 4px; /* Ajustá este valor según el espacio que quieras */
-  font-size: 1.2em;
-  font-weight: 300;
-  color: #aaa;
+  margin-top: 4px; /* Separación mínima respecto al título */
+  font-size: 1.2em; /* Tamaño un poco mayor que normal */
+  font-weight: 300; /* Delgadito */
+  color: #aaa; /* Gris claro */
 }
